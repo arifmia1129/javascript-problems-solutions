@@ -146,17 +146,16 @@ const arrAvg = (arr) => {
 
 // console.log(arrAvg([1, 2,3]));
 
-
 // Problem 12:
 // Write a function that takes a number as input and returns true if it is a prime number, and false otherwise.
 
-function isPrime (number) {
-  if(number < 2){
+function isPrime(number) {
+  if (number < 2) {
     return false;
   }
 
-  for(let i = 2; i <= Math.sqrt(number); i++) {
-    if(number % i === 0) {
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
       return false;
     }
   }
@@ -166,16 +165,14 @@ function isPrime (number) {
 
 // console.log(isPrime(3));
 
-
 // Problem 13:
 // Write a function that takes a string as input and returns the number of words in the string.
 
-function countStringWords (str) {
-  return str.trim().split("").length;
+function countStringWords(str) {
+  return str.trim().split('').length;
 }
 
 // console.log(countStringWords("arif"));
-
 
 // Problem 14:
 // Write a function that takes an array of strings as input and returns a new array with the strings sorted in alphabetical order.
@@ -183,6 +180,35 @@ function sortArr(strArr) {
   return strArr.sort();
 }
 
-console.log(sortArr(["binu", "arif", "soikot"]));
+// console.log(sortArr(["binu", "arif", "soikot"]));
 
+// Problem 15:
+// Write a function that takes a number as input and returns the factorial of that number.
+
+function factorial(number) {
+  if (number === 0 || number === 1) {
+    return 1;
+  }
+
+  let fac = 1;
+
+  for (let i = 2; i <= number; i++) {
+    fac *= i;
+  }
+
+  return fac;
+}
+
+// console.log(factorial(5));
+
+// Problem 16:
+// Write a function that takes two strings as input and returns true if they are anagrams, and false otherwise.
+
+function areAnagrams(str1, str2) {
+  const sortedStr1 = str1.split('').sort().join('');
+  const sortedStr2 = str2.split('').sort().join('');
+  return sortedStr1 === sortedStr2;
+}
+
+console.log(areAnagrams("arif", "fair"));
 

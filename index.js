@@ -210,5 +210,17 @@ function areAnagrams(str1, str2) {
   return sortedStr1 === sortedStr2;
 }
 
-console.log(areAnagrams("arif", "fair"));
+// console.log(areAnagrams("arif", "fair"));
+
+// Problem 17:
+// Write a function that takes an array of numbers as input and returns the product of all the numbers.
+
+function calculateProduct(numArr) {
+  return numArr.reduce((acc, curr)=> {
+    return acc + curr;
+  },1)
+}
+
+// console.log(calculateProduct([1, 2, 3]));
+
 

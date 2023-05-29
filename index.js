@@ -164,4 +164,15 @@ function isPrime (number) {
   return true;
 }
 
-console.log(isPrime(3));
+// console.log(isPrime(3));
+
+
+// Problem 13:
+// Write a function that takes a string as input and returns the number of words in the string.
+
+function countStringWords (str) {
+  return str.trim().split("").length;
+}
+
+console.log(countStringWords("arif"));
+

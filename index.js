@@ -144,4 +144,24 @@ const arrAvg = (arr) => {
   return sum / arr.length;
 };
 
-console.log(arrAvg([1, 2,3]));
+// console.log(arrAvg([1, 2,3]));
+
+
+// Problem 12:
+// Write a function that takes a number as input and returns true if it is a prime number, and false otherwise.
+
+function isPrime (number) {
+  if(number < 2){
+    return false;
+  }
+
+  for(let i = 2; i <= Math.sqrt(number); i++) {
+    if(number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(isPrime(3));

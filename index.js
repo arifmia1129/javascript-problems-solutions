@@ -124,7 +124,26 @@ const isPalindrome = (str) => {
     return str === reverseStr;
 }
 
-console.log(isPalindrome("madam"));
+// console.log(isPalindrome("madam"));
+
+
+// Problem 10:
+// Write a function that takes an array of strings as input and returns the number of strings with more than 5 characters.
+
+const sumMoreThanFiveString = (stringArr) => {
+    let count = 0;
+
+    for(const str of stringArr) {
+        if(str.length > 5){
+            count += 1;
+        }
+    }
+
+    return count;
+}
+
+console.log(sumMoreThanFiveString(["arif", "mdarif", "binu", "sadik", "hannan", "tabassum"]));
+
 
 
 

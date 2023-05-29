@@ -174,5 +174,15 @@ function countStringWords (str) {
   return str.trim().split("").length;
 }
 
-console.log(countStringWords("arif"));
+// console.log(countStringWords("arif"));
+
+
+// Problem 14:
+// Write a function that takes an array of strings as input and returns a new array with the strings sorted in alphabetical order.
+function sortArr(strArr) {
+  return strArr.sort();
+}
+
+console.log(sortArr(["binu", "arif", "soikot"]));
+
 

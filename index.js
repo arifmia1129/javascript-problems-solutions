@@ -52,7 +52,18 @@ const concatString = (strArr)=>{
     return strArr.join("");
 }
 
-console.log(concatString(["arif", "binu"]));
+// console.log(concatString(["arif", "binu"]));
+
+
+// Problem 5:
+// Write a function that takes a number as input and returns true if the number is even, and false otherwise.
+
+function isEven (num) {
+    return num % 2 === 0;
+}
+
+console.log(isEven(4));
+
 
 
 

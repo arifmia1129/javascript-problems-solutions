@@ -9,7 +9,6 @@
 
 // console.log(sum);
 
-
 // Problem 2:
 // Write a function that takes an array of numbers as input and returns the largest number in the array.
 
@@ -34,7 +33,6 @@
 
 // console.log(largestNumber([1, 2, 3,10,100,500]));
 
-
 // Problem 3:
 // Write a function that takes a string as input and returns the reverse of the string.
 
@@ -44,22 +42,20 @@
 
 // console.log(reverseString("Arif"));
 
-
 // Problem 4:
 // Write a function that takes an array of strings as input and returns the concatenation of all the strings.
 
-const concatString = (strArr)=>{
-    return strArr.join("");
-}
+const concatString = (strArr) => {
+  return strArr.join('');
+};
 
 // console.log(concatString(["arif", "binu"]));
-
 
 // Problem 5:
 // Write a function that takes a number as input and returns true if the number is even, and false otherwise.
 
-function isEven (num) {
-    return num % 2 === 0;
+function isEven(num) {
+  return num % 2 === 0;
 }
 
 // console.log(isEven(4));
@@ -68,93 +64,84 @@ function isEven (num) {
 // Write a function that takes an array of numbers as input and returns the sum of all the even numbers in the array.
 
 const numbersArrSum = (arr) => {
-    let sum = 0;
+  let sum = 0;
 
-    for(const numEl of arr) {
-        sum += numEl;
-    }
+  for (const numEl of arr) {
+    sum += numEl;
+  }
 
-    return sum;
-}
+  return sum;
+};
 
 // console.log(numbersArrSum([1, 2, 3, 4, 5]));
-
 
 // Problem 7:
 // Write a function that takes a string as input and returns the number of vowels in the string.
 
 function countVowel(str) {
-    const vowels = "aeiou";
-    let count = 0;
+  const vowels = 'aeiou';
+  let count = 0;
 
-    for(const char of str.toLowerCase()){
-        if(vowels.includes(char)){
-            count += 1;
-        }
+  for (const char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count += 1;
     }
-    return count;
+  }
+  return count;
 }
 
 // console.log(countVowel("arif"));
-
 
 // Problem 8:
 // Write a function that takes an array of numbers as input and returns a new array containing only the positive numbers.
 
 const positiveNumbers = (numberArr) => {
-    let newArr = [];
+  let newArr = [];
 
-    for (const number of numberArr){
-        if(number > 0) {
-            newArr.push(number);
-        }
+  for (const number of numberArr) {
+    if (number > 0) {
+      newArr.push(number);
     }
+  }
 
-    return newArr;
-}
+  return newArr;
+};
 
 // console.log(positiveNumbers([1, 2, 3, -1, 0, 100, -100]));
-
 
 // Problem 9:
 // Write a function that takes a string as input and returns true if the string is a palindrome, and false otherwise.
 
 const isPalindrome = (str) => {
-    const reverseStr = str.split("").reverse().join("");
-    return str === reverseStr;
-}
+  const reverseStr = str.split('').reverse().join('');
+  return str === reverseStr;
+};
 
 // console.log(isPalindrome("madam"));
-
 
 // Problem 10:
 // Write a function that takes an array of strings as input and returns the number of strings with more than 5 characters.
 
 const sumMoreThanFiveString = (stringArr) => {
-    let count = 0;
+  let count = 0;
 
-    for(const str of stringArr) {
-        if(str.length > 5){
-            count += 1;
-        }
+  for (const str of stringArr) {
+    if (str.length > 5) {
+      count += 1;
     }
+  }
 
-    return count;
-}
+  return count;
+};
 
-console.log(sumMoreThanFiveString(["arif", "mdarif", "binu", "sadik", "hannan", "tabassum"]));
+// console.log(sumMoreThanFiveString(["arif", "mdarif", "binu", "sadik", "hannan", "tabassum"]));
 
+// Problem 11:
+// Write a function that takes an array of numbers as input and returns the average of all the numbers.
 
+const arrAvg = (arr) => {
+  const sum = arr.reduce((acc, curr) => acc + curr, 0);
+  return sum / arr.length;
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(arrAvg([1, 2,3]));

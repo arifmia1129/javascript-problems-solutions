@@ -62,7 +62,24 @@ function isEven (num) {
     return num % 2 === 0;
 }
 
-console.log(isEven(4));
+// console.log(isEven(4));
+
+// Problem 6:
+// Write a function that takes an array of numbers as input and returns the sum of all the even numbers in the array.
+
+const numbersArrSum = (arr) => {
+    let sum = 0;
+
+    for(const numEl of arr) {
+        sum += numEl;
+    }
+
+    return sum;
+}
+
+console.log(numbersArrSum([1, 2, 3, 4, 5]));
+
+
 
 
 

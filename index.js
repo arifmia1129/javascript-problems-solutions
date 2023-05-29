@@ -223,4 +223,13 @@ function calculateProduct(numArr) {
 
 // console.log(calculateProduct([1, 2, 3]));
 
+// Problem 19:
+// Write a function that takes an array of strings as input and returns a new array with the lengths of the strings.
+
+function elementLengthArr (strArr) {
+  return strArr.map(str => str.length);
+}
+
+console.log(elementLengthArr(["arif", "binu", "soikot"]));
+
 

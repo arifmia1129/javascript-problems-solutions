@@ -95,7 +95,26 @@ function countVowel(str) {
     return count;
 }
 
-console.log(countVowel("arif"));
+// console.log(countVowel("arif"));
+
+
+// Problem 8:
+// Write a function that takes an array of numbers as input and returns a new array containing only the positive numbers.
+
+const positiveNumbers = (numberArr) => {
+    let newArr = [];
+
+    for (const number of numberArr){
+        if(number > 0) {
+            newArr.push(number);
+        }
+    }
+
+    return newArr;
+}
+
+console.log(positiveNumbers([1, 2, 3, -1, 0, 100, -100]));
+
 
 
 

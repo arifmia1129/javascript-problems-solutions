@@ -45,6 +45,16 @@
 // console.log(reverseString("Arif"));
 
 
+// Problem 4:
+// Write a function that takes an array of strings as input and returns the concatenation of all the strings.
+
+const concatString = (strArr)=>{
+    return strArr.join("");
+}
+
+console.log(concatString(["arif", "binu"]));
+
+
 
 
 

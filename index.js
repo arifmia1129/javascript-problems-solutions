@@ -113,7 +113,21 @@ const positiveNumbers = (numberArr) => {
     return newArr;
 }
 
-console.log(positiveNumbers([1, 2, 3, -1, 0, 100, -100]));
+// console.log(positiveNumbers([1, 2, 3, -1, 0, 100, -100]));
+
+
+// Problem 9:
+// Write a function that takes a string as input and returns true if the string is a palindrome, and false otherwise.
+
+const isPalindrome = (str) => {
+    const reverseStr = str.split("").reverse().join("");
+    return str === reverseStr;
+}
+
+console.log(isPalindrome("madam"));
+
+
+
 
 
 

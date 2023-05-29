@@ -77,7 +77,26 @@ const numbersArrSum = (arr) => {
     return sum;
 }
 
-console.log(numbersArrSum([1, 2, 3, 4, 5]));
+// console.log(numbersArrSum([1, 2, 3, 4, 5]));
+
+
+// Problem 7:
+// Write a function that takes a string as input and returns the number of vowels in the string.
+
+function countVowel(str) {
+    const vowels = "aeiou";
+    let count = 0;
+
+    for(const char of str.toLowerCase()){
+        if(vowels.includes(char)){
+            count += 1;
+        }
+    }
+    return count;
+}
+
+console.log(countVowel("arif"));
+
 
 
 
